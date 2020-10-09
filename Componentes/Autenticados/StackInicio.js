@@ -6,6 +6,7 @@ import Inicio from "./Inicio";
 import Publicaciones from "./Publicaciones";
 import Comentarios from "./Comentarios";
 import Perfil from "./Perfil";
+import DrawerPerfil from "./DrawerPerfil";
 
 const Stack = createStackNavigator();
 
@@ -17,6 +18,7 @@ const StackInicio = ({ nombreRutaInicial }) => {
       <Stack.Screen name="Perfil" component={Perfil} />
       <Stack.Screen name="Publicaciones" component={Publicaciones} />
       <Stack.Screen name="Comentarios" component={Comentarios} />
+      <Stack.Screen name="DrawerPerfil" component={DrawerPerfil} />
     </Stack.Navigator>
   );
 };

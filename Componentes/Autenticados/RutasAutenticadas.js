@@ -42,7 +42,7 @@ const RutasAutenticadas = () => {
         )}
       </Tab.Screen>
       <Tab.Screen name="Perfil">
-        {(props) => <StackInicio {...props} nombreRutaInicial="Perfil" />}
+        {(props) => <StackInicio {...props} nombreRutaInicial="DrawerPerfil" />}
       </Tab.Screen>
     </Tab.Navigator>
   );
