@@ -15,6 +15,8 @@ const Perfil = () => {
           navigation.push("Publicaciones");
         }}
       />
+      <Button title="Open drawer" onPress={() => navigation.openDrawer()} />
+      <Button title="Toggle drawer" onPress={() => navigation.toggleDrawer()} />
     </View>
   );
 };

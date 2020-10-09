@@ -1,12 +1,16 @@
 //import liraries
 import React, { Component } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Button } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 // create a component
 const Configuracion = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <Text>Configuración</Text>
+      <Button title="Open drawer" onPress={() => navigation.openDrawer()} />
+      <Button title="Toggle drawer" onPress={() => navigation.toggleDrawer()} />
     </View>
   );
 };

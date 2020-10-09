@@ -9,7 +9,7 @@ const Drawer = createDrawerNavigator();
 // create a component
 const MyComponent = () => {
   return (
-    <Drawer.Navigator initialRouteName="Home">
+    <Drawer.Navigator initialRouteName="Home" drawerPosition="right">
       <Drawer.Screen name="Perfil" component={Perfil} />
       <Drawer.Screen name="Configuracion" component={Configuracion} />
     </Drawer.Navigator>
