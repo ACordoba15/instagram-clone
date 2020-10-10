@@ -1,17 +1,18 @@
-/* eslint-disable react/prop-types */
 //import liraries
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { View, Text, StyleSheet, Button } from "react-native";
 
 // create a component
-const Perfil = ({ navigation }) => {
+const CerrarSesion = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
-      <Text>Perfil</Text>
+      <Text>CerrarSesion</Text>
       <Button
-        title="Publicación"
+        title="Iniciar sesión"
         onPress={() => {
-          navigation.push("Publicaciones");
+          navigation.goBack();
         }}
       />
     </View>
@@ -29,4 +30,4 @@ const styles = StyleSheet.create({
 });
 
 //make this component available to the app
-export default Perfil;
+export default CerrarSesion;

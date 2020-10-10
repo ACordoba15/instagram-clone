@@ -4,16 +4,18 @@ import React from "react";
 import { View, Text, StyleSheet, Button } from "react-native";
 
 // create a component
-const Perfil = ({ navigation }) => {
+const MiPerfil = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text>Perfil</Text>
+      <Text>MiPerfil</Text>
       <Button
         title="Publicación"
         onPress={() => {
           navigation.push("Publicaciones");
         }}
       />
+      <Button title="Open drawer" onPress={() => navigation.openDrawer()} />
+      <Button title="Toggle drawer" onPress={() => navigation.toggleDrawer()} />
     </View>
   );
 };
@@ -29,4 +31,4 @@ const styles = StyleSheet.create({
 });
 
 //make this component available to the app
-export default Perfil;
+export default MiPerfil;

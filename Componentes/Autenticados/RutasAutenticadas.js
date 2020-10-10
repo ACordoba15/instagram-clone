@@ -5,6 +5,8 @@ import Nuevo from "./Nuevo";
 import StackInicio from "./StackInicio";
 import StackBusqueda from "./StackBusquedas";
 import StackSeguidores from "./StackSeguidores";
+import DrawerPerfil from "./DrawerPerfil";
+import StackMiPerfil from "./StackMiPerfil";
 
 const Tab = createBottomTabNavigator();
 // create a component
@@ -42,7 +44,7 @@ const RutasAutenticadas = () => {
         )}
       </Tab.Screen>
       <Tab.Screen name="Perfil">
-        {(props) => <StackInicio {...props} nombreRutaInicial="DrawerPerfil" />}
+        {(props) => <StackMiPerfil {...props} nombreRutaInicial="MiPerfil" />}
       </Tab.Screen>
     </Tab.Navigator>
   );
